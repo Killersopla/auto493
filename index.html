@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Killersopla HEN 4.93</title>
+
+<style>
+
+body
+{
+    color: crimson;
+    background-color: gray;
+    background-image: url('background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    color:white;
+    text-shadow:2px 2px 4px black;
+    margin-top: 80px;
+}
+
+h2
+{
+    color:yellow;
+}
+
+button
+{
+    font-size:24px;
+    padding:15px 40px;
+    background:black;
+    color:white;
+    border:3px solid crimson;
+    cursor:pointer;
+}
+
+button:hover
+{
+    background:crimson;
+}
+
+#status
+{
+    margin-top:30px;
+    font-size:20px;
+    color:white;
+}
+
+.footer
+{
+    margin-top:60px;
+    color:white;
+    font-size:14px;
+}
+
+</style>
+
+<script>
+
+function aplicarMagia()
+{
+    document.getElementById("status").innerHTML="Conectando con servidor PS3Xploit...";
+    
+    setTimeout(function(){
+        document.getElementById("status").innerHTML="Cargando instalador HEN 4.93...";
+    },2000);
+
+    setTimeout(function(){
+        window.location.href="https://ps3xploit.me/hen/installer/index.html";
+    },4000);
+}
+
+window.onload=function()
+{
+    document.getElementById("status").innerHTML="Presiona Aplicar Magia para instalar HEN 4.93";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>🌟 MAGIA con un SOLO TOQUE 🌟</h1>
+<h2>PS3 HEN 4.93</h2>
+
+<br><br>
+
+<button onclick="aplicarMagia()">
+Aplicar Magia ✨
+</button>
+
+<div id="status"></div>
+
+<div class="footer">
+
+<br><br>
+
+Host Killersopla 4.93
+
+<br><br>
+
+Créditos:<br>
+PS3Xploit Team<br>
+PS3HEN Developers<br>
+PSX-Place Community
+
+</div>
+
+</body>
+</html>
